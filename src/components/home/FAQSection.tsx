@@ -13,7 +13,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section id="faq" className="pt-[60px] px-6 lg:px-0 scroll-mt-[85px]">
+    <section id="faq" className="pt-[60px] px-6 lg:px-0">
       <div className="max-w-[792px] mx-auto">
         <h2 className="text-2xl md:text-[32px] md:leading-10 font-semibold text-[#020617] text-center">
           Frequently asked questions
