@@ -36,7 +36,11 @@ const CreateEvents: React.FC = () => {
                 event.reverseOnDesktop ? "md:order-1" : "md:order-2"
               }`}
             >
-              <Image src={event.image} alt={event.title} />
+              <Image
+                src={event.image}
+                alt={event.title}
+                className="max-w-[320px]"
+              />
             </div>
           </div>
         ))}

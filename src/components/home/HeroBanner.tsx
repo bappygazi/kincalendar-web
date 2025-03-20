@@ -1,7 +1,7 @@
 import Image from "next/image";
 import BannerMobile from "../../assets/banner-mobile.png";
-import bannerCard from "../../assets/card-sm-banner.svg";
 import heroBanner from "../../assets/hero-banner.png";
+import mobileCard4x from "../../assets/mobile-card-4x.webp";
 
 const HeroBanner: React.FC = () => {
   return (
@@ -36,7 +36,7 @@ const HeroBanner: React.FC = () => {
         </div>
         <div className="absolute top-[30px] left-1/2 -translate-x-1/2">
           <Image
-            src={bannerCard}
+            src={mobileCard4x}
             alt="bannerCard"
             className="min-w-[320px] h-full"
           />

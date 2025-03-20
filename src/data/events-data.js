@@ -1,7 +1,7 @@
-import attachPhone from "../assets/attach-phone.png";
+import attach4x from "../assets/4xandupdate/attach-4x.webp";
+import change4x from "../assets/4xandupdate/change-4x.webp";
+import create4xSS from "../assets/4xandupdate/create-4x.webp";
 import createIcon from "../assets/create-icon.svg";
-import createPhone from "../assets/create-phone.png";
-import editPhone from "../assets/edit-phone.png";
 
 export const eventsData = [
   {
@@ -10,7 +10,7 @@ export const eventsData = [
     description:
       "Simply speak and let KIN handle the details and set up your recurring events in seconds.",
     icon: createIcon,
-    image: createPhone,
+    image: create4xSS,
     reverseOnDesktop: false,
   },
   {
@@ -19,7 +19,7 @@ export const eventsData = [
     description:
       "Need to adjust plans? Hold an event to talk changes in real time.",
     icon: createIcon,
-    image: editPhone,
+    image: change4x,
     reverseOnDesktop: true,
   },
   {
@@ -28,7 +28,7 @@ export const eventsData = [
     description:
       "Snap a photo or screenshot and watch as KIN turns it into an event on your family calendar.",
     icon: createIcon,
-    image: attachPhone,
+    image: attach4x,
     reverseOnDesktop: false,
   },
 ];

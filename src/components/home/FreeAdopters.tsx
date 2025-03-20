@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import apple2 from "../../assets/apple2.svg";
 
 const FreeAdopters: React.FC = () => {
@@ -18,9 +19,14 @@ const FreeAdopters: React.FC = () => {
               Don’t miss your chance to join the family revolution in
               scheduling.
             </p>
-            <button className="mt-6 font-semibold text-base left-6 bg-white text-black py-4 px-6 rounded-lg flex items-center justify-center gap-x-2 mx-auto shadow-md w-full sm:w-auto hover:bg-[#F5F8FA] duration-200">
+            <Link
+              href={
+                "https://apps.apple.com/us/app/kin-family-calendar/id6714457940"
+              }
+              className="mt-6 font-semibold text-base left-6 bg-white text-black py-4 px-6 rounded-lg flex items-center justify-center gap-x-2 mx-auto shadow-md w-full sm:w-auto hover:bg-[#F5F8FA] duration-200"
+            >
               <Image src={apple2} alt="apple" /> Download KIN for free
-            </button>
+            </Link>
           </div>
         </div>
       </div>
