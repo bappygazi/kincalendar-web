@@ -8,11 +8,11 @@ const CreateEvents: React.FC = () => {
         {eventsData.map((event, index) => (
           <div
             key={index}
-            className="w-full flex flex-col md:flex-row items-start justify-between gap-8 md:gap-[60px]"
+            className="w-full flex flex-col md:flex-row items-start justify-between gap-8 lg:gap-[60px]"
           >
             <div
-              className={`max-w-max md:max-w-[315px] space-y-2 order-1 ${
-                event.reverseOnDesktop ? "md:order-2" : "md:order-1"
+              className={`max-w-max md:max-w-[315px] space-y-2 ${
+                event.title === "Edit events" ? "md:order-2" : "md:order-1"
               }`}
             >
               <div className="flex items-center gap-1.5">
@@ -31,15 +31,19 @@ const CreateEvents: React.FC = () => {
               </div>
             </div>
 
+            {/* Video part */}
             <div
-              className={`bg-[#F7F7F7] w-full md:w-auto rounded-xl px-6 md:px-[50px] pb-[60px] order-2 flex md:flex-none items-center justify-center ${
-                event.reverseOnDesktop ? "md:order-1" : "md:order-2"
+              className={`bg-[#F7F7F7] w-full md:w-auto rounded-xl flex md:flex-none items-center justify-center ${
+                event.title === "Edit events" ? "md:order-1" : "md:order-2"
               }`}
             >
-              <Image
-                src={event.image}
-                alt={event.title}
-                className="max-w-[320px]"
+              <video
+                src={event.video}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="sm:max-w-[416px] rounded-xl"
               />
             </div>
           </div>
